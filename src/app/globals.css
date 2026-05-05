@@ -1,21 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FCFBF7;
+  --color-foreground: #1A1916;
+  --color-muted: #6B6860;
+  --color-accent: #7B5CF0;
+  --color-accent-soft: #F0EBFB;
+  --color-border: #E8E6E0;
+  --color-card: #F7F5F0;
+  --color-sidebar: #F2F0EB;
+
+  --font-family-sans: var(--font-geist), system-ui, sans-serif;
+  --font-family-serif: var(--font-instrument), Georgia, serif;
+  --font-family-mono: var(--font-geist-mono), "DM Mono", monospace;
+
+  --radius: 8px;
+}
 
 @layer base {
-  :root {
-    --color-background: #FCFBF7;
-    --color-foreground: #1A1916;
-    --color-muted: #6B6860;
-    --color-accent: #7B5CF0;
-    --color-accent-soft: #F0EBFB;
-    --color-border: #E8E6E0;
-    --color-card: #F7F5F0;
-    --color-sidebar: #F2F0EB;
-  }
-
   html {
     -webkit-font-smoothing: antialiased;
+    background-color: #FCFBF7;
+    color: #1A1916;
   }
 
   ::selection {
