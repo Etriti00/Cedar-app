@@ -50,7 +50,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-6 text-sm text-[#6B6860]">
             <Link href="#features" className="hover:text-[#1A1916] transition-colors">Features</Link>
             <Link href="#pricing" className="hover:text-[#1A1916] transition-colors">Pricing</Link>
-            <Link href="/dashboard" className="text-[#1A1916] hover:text-[#7B5CF0] transition-colors font-medium">Dashboard →</Link>
+            <Link href="/auth/login" className="text-[#1A1916] hover:text-[#7B5CF0] transition-colors font-medium">Sign in →</Link>
           </div>
         </div>
       </nav>
@@ -71,13 +71,13 @@ export default function LandingPage() {
           </p>
           <div className="flex items-center gap-4 flex-wrap">
             <Link
-              href="/onboarding"
+              href="/auth/signup"
               className="inline-flex items-center gap-2 bg-[#1A1916] text-[#FCFBF7] px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-[#7B5CF0] transition-colors"
             >
               Start free trial <ArrowRight size={14} />
             </Link>
             <Link
-              href="/dashboard"
+              href="/auth/login"
               className="inline-flex items-center gap-2 text-sm text-[#6B6860] hover:text-[#1A1916] transition-colors"
             >
               See the dashboard →
@@ -164,7 +164,7 @@ export default function LandingPage() {
                 ))}
               </ul>
               <Link
-                href="/onboarding"
+                href="/auth/signup"
                 className={`block text-center text-sm font-medium py-2.5 rounded-lg transition-colors ${
                   p.highlight
                     ? "bg-white text-[#7B5CF0] hover:bg-[#F0EBFB]"
